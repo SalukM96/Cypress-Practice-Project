@@ -1,0 +1,6 @@
+# Node dependencies
+node_modules/
+
+# Cypress folders for test media
+cypress/videos/
+cypress/screenshots/
