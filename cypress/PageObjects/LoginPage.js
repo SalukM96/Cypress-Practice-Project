@@ -1,7 +1,6 @@
 class Login {
 
     SetUsername(username){
-        // cy.get("[placeholder='Username']").type(username)
         cy.get("[name='username']").type(username)
     }
 
@@ -10,7 +9,6 @@ class Login {
     }
 
     ClickSubmitBtn(){
-        // cy.get(".oxd-button oxd-button--medium oxd-button--main orangehrm-login-button").click()
         cy.get("[type='submit']").click()
     }
 }
