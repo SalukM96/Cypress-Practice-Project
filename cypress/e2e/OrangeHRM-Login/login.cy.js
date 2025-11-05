@@ -7,7 +7,7 @@ describe('OrangeHRM Login', ()=> {
     })
 
     it('verify user should be able to login Orange HRM sucessfully', ()=> {
-        cy.fixture('orange-hrm').then((data)=>{
+        cy.fixture('data/Users/ValidUser.json').then((data)=>{
             const ln = new Login();
             ln.SetUsername(data.username)
             ln.SetPassword(data.password)
@@ -26,6 +26,4 @@ describe('OrangeHRM Login', ()=> {
             cy.get('.oxd-alert-content > .oxd-text').should('contain', data.message)
         })
     })
-
-
 })
